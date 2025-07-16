@@ -1,0 +1,71 @@
+/* NAV */
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+  padding: 10px;
+  background-color: #ffffff;
+  color: white;
+  padding-bottom: 10%;
+}
+
+nav h1 {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+}
+
+.nav-links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px;
+  background-color: #f3eeee;
+}
+
+.container {
+  padding-left: 10%;
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+  width: 200px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.buy-btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+.modal-content {
+  background: white;
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  position: relative;
+  border-radius: 5px;
+}
+
+#close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}

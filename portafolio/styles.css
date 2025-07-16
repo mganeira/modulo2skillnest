@@ -1,0 +1,236 @@
+/* === Animaciones === */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* === General === */
+body {
+  background: url("V.jpg");
+  background-attachment: fixed;
+  background-size: cover cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+    "San Francisco", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  color: #ffffff;
+  margin: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+    "San Francisco", "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
+
+.educacion-experiencia-texto {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+    "San Francisco", "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
+
+.image-container {
+  width: 200px;
+  margin: 0 auto 20px auto; /* centra horizontal y espacio abajo */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05); /* fondo sutil */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  text-align: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.text-below {
+  padding: 10px 0 15px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+    "San Francisco", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(255, 105, 180, 0.8);
+}
+
+/* === Layout === */
+.w3-row-padding {
+  display: flex;
+  align-items: stretch;
+  padding-bottom: 20px;
+}
+
+.w3-twothird {
+  display: flex;
+  flex-direction: column;
+}
+
+.w3-third p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.fade-in {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.w3-card-4,
+.glass-container {
+  flex-grow: 1;
+  border-radius: 25px;
+  background: rgba(121, 57, 233, 0.401);
+  backdrop-filter: blur(20px) brightness(1.2);
+  -webkit-backdrop-filter: blur(20px) brightness(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(255, 192, 255, 0.15),
+    0 0 40px rgba(255, 105, 180, 0.2);
+  margin-bottom: 20px;
+}
+
+.w3-card.glass-container:hover,
+.w3-card-4.glass-container:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 30px rgba(255, 105, 180, 0.4);
+  transition: all 0.3s ease;
+}
+
+/* === Progress Bars === */
+.w3-light-grey {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.w3-dark-teal {
+  background-color: rgba(150, 94, 206, 0.613) !important; /* oscuro y opaco */
+  color: white !important;
+}
+.w3-text-teal {
+  color: #ffffff !important;
+}
+
+.w3-text-white {
+  color: #ffffff !important;
+}
+
+/* === Botones === */
+.glass-button {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(255, 105, 180, 0.2);
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(255, 105, 180, 0.2);
+}
+
+/* === Proyectos === */
+.projects-container-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 500px; 
+  overflow-y: auto;
+  padding-right: 10px;
+  scroll-behavior: smooth;
+}
+
+/* Scroll estilizado */
+.projects-container-vertical::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+.projects-container-vertical::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 184, 255, 0.794);
+  border-radius: 8px;
+}
+.projects-container-vertical::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.project-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 32px 0 rgba(255, 105, 180, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.project-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* === Redes Sociales === */
+
+.social-icons {
+  position: fixed;
+  top: 30%;
+  left: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  color: white;
+  transition: 0.3s;
+  box-shadow: 0 8px 32px 0 rgba(255, 105, 180, 0.2);
+}
+
+.social-icons a:hover {
+  box-shadow: 0 8px 32px 0 rgba(255, 105, 180, 0.2);
+  transform: scale(1.1);
+}
+
+.w3-light-grey {
+  height: 24px !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.w3-light-grey > div {
+  height: 100% !important;
+  line-height: 24px; /* centra verticalmente el texto */
+  font-size: 14px;
+}

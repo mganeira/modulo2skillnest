@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cartelera de Películas</title>
+  <link rel="stylesheet" href="css\styles.css">
+</head>
+<body>
+<header>
+  <nav>
+    <h1>Cine Chile</h1>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="sedes.html">Sedes</a>
+      <a href="contacto.html">Contáctanos</a>
+    </div>
+  </nav>
+</header>
+
+
+  <h1>Cartelera</h1>
+
+  <div class="container">
+    <div class="card">
+      <img src="img\stitch.jpg" alt="Poster Lilo & Stitch 2025">
+      <h3>Lilo & Stitch</h3>
+      <button class="buy-btn">Reservar</button>
+    </div>
+    <div class="card">
+      <img src="img\opp.jpg" alt="Poster Oppenheimer 2025">
+      <h3>Oppenheimer</h3>
+      <button class="buy-btn">Reservar</button>
+    </div>
+     <div class="card">
+      <img src="img\ceatd.jpg" alt="Poster Cómo entrenar a tu dragón">
+      <h3>Cómo entrenar a tu dragón</h3>
+      <button class="buy-btn">Reservar</button>
+    </div>
+     <div class="card">
+      <img src="img\fm.jpg" alt="Poster Película Falsa">
+      <h3>Película Falsa </h3>
+      <button class="buy-btn">Reservar</button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="close-btn">&times;</span>
+      <h2>Formulario de Compra</h2>
+    <p>
+ <label for="pelicula">Película:</label>
+  <select id="pelicula" class="form-select form-select-lg mb-3" aria-label="Película">
+        <option value>Oppenheimer</option>
+        <option value>Lilo & Stitch</option>
+        <option value>Cómo entrenar a tu dragón</option>
+    </select>  
+     </p>
+     <p>
+  <label for="horario">Horario:</label>
+  <select id="horario" class="form-select form-select-lg mb-3" aria-label="Horario">
+        <option selected>Horario</option>
+        <option value>20:00 - 21:45</option>
+        <option value>21:00 - 22:45</option>
+        <option value>21:30 - 23:15</option>
+    </select>  
+      </p>
+    <form>
+        <label for="rut">Cantidad de asientos:</label>
+        <input type="text" id="asientos"><br>
+
+        <label for="rut">Rut:</label>
+        <input type="text" id="rut"><br>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre"><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email"><br>
+
+        <label for="celular">Celular:</label>
+        <input type="tel" id="celular"><br>
+
+    <p>
+  <label for="pago">Método de pago:</label>
+  <select id="pago" class="form-select form-select-lg mb-3" aria-label="Horario">
+        <option selected>Método de pago</option>
+        <option value>Débito por Webpay</option>
+        <option value>Crédito por Webpay</option>
+        <option value>Khipu</option>
+        <option value>Compra aquí Banco Estado</option>
+        <option value>Servipag</option>
+    </select>  
+    </p>
+        <button type="submit">Confirmar reserva</button>
+        <button type="reset">Salir</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
