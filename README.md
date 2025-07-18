@@ -1,2 +1,2 @@
 # modulo2skillnest
-Todas las evaluaciones del módulo 2 del BFSP
+Módulo 2 del bootcamp orientado a html, css, js.
